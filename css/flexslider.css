@@ -1,0 +1,392 @@
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; /*-webkit-backface-visibility: hidden;*/} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* Theme Styles
+*********************************/
+.flexslider {
+	position: relative;
+}
+
+.flexslider .slides {
+	margin: 0;
+}
+
+.flexslider .slides > li {
+	margin: 0;
+}
+
+.flexslider .slide-image {
+	position: relative;
+}
+
+.flexslider .slides img {
+	height: auto;
+}
+
+/* Pagination */
+.flexslider .flex-control-paging {
+	bottom: 20px;
+	font-size: 0;
+	height: 20px;
+	line-height: 0;
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+
+.flex-control-paging li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.flex-control-paging a {
+	background-color: transparent;
+	border: 3px solid rgba(0, 0, 0, .7);
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 14px;
+	line-height: 0;
+	width: 14px;
+}
+
+.flex-control-paging a:after {
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height: 14px;
+	width: 14px;
+}
+
+/* Direction nav */
+.flexslider .flex-direction-nav {
+	height: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.touch .flex-direction-nav {
+	display: none;
+}
+
+.flexslider .flex-direction-nav li {
+	margin: 0;
+}
+
+.flex-prev {
+	border-radius: 0 7px 7px 0;
+	left: 0;
+}
+
+.flex-next {
+	border-radius: 7px 0 0 7px;
+	right: 0;
+}
+
+.flex-direction-nav a {
+	background-color: #000;
+	display: block;
+	height: 50px;
+	margin-top: -25px;
+	text-align: center;
+	opacity: 0;
+	outline: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity .2s;
+	transition: opacity .2s;
+	width: 50px;
+	z-index: 100;
+}
+
+.flexslider:hover .flex-direction-nav a {
+	opacity: .7;
+}
+
+.flex-direction-nav a:after {
+	color: #fff;
+	content: '\f104';
+	display: inline-block;
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	vertical-align: middle;
+}
+
+a.flex-prev:after {
+	left: -1px;
+}
+
+a.flex-next:after {
+	right: -1px;
+	content: '\f105';
+}
+
+.flex-direction-nav a:hover:after {
+	color: #fff;
+}
+
+/* Overlay */
+.flexslider .overlay .slide-image:after {
+	background-color: rgba(0, 0, 0, .2);
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Full Width Slider */
+.fw-slider {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1920px;
+}
+
+/* Full Width Slider Caption */
+.fw-slider .slide-caption {
+	font-size: 10px;
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	z-index: 10;
+}
+
+.fw-slider .caption-inner {
+	max-width: 40%;
+}
+
+.fw-slider .right .caption-inner {
+	float: right;
+}
+
+.fw-slider .slide-title,
+.fw-slider .slide-description {
+	color: #fff;
+}
+
+.cssanimations .fw-slider .slide-title,
+.cssanimations .fw-slider .slide-description {
+	opacity: 0;
+}
+
+.fw-slider .dark .slide-title,
+.fw-slider .dark .slide-description {
+	color: #333;
+}
+
+.fw-slider .slide-title {
+	font-size: 3.4em;
+	line-height: 1.2em;
+	margin-bottom: .5em;
+	text-transform: uppercase;
+}
+
+.fw-slider .slide-description {
+	font-size: 2.4em;
+	line-height: 1.4em;
+	margin-top: 0.6em;
+}
+
+.cssanimations .slide-caption.in .slide-title {
+	-webkit-animation: incbfwstitle .3s ease-in forwards;
+	animation: incbfwstitle .3s ease-in forwards;
+}
+
+.cssanimations .slide-caption.in .slide-description {
+	-webkit-animation: incbfwsdescription .3s ease-in forwards;
+	animation: incbfwsdescription .3s ease-in forwards;
+}
+
+@-webkit-keyframes incbfwstitle {
+	from {-webkit-transform: translateY(-1.2em); opacity: 0;}
+	to {-webkit-transform: translateY(0); opacity: 1;}
+}
+
+@-webkit-keyframes incbfwsdescription {
+	from {-webkit-transform: translateY(1.2em); opacity: 0;}
+	to {-webkit-transform: translateY(0); opacity: 1;}
+}
+
+@keyframes incbfwstitle {
+	from {transform: translateY(-1.2em); opacity: 0;}
+	to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes incbfwsdescription {
+	from {transform: translateY(1.2em); opacity: 0;}
+	to {transform: translateY(0); opacity: 1;}
+}
+
+.slide-caption .buttons {
+	margin-top: 2.6em;
+}
+
+.cssanimations .slide-caption .buttons {
+	opacity: 0;
+}
+
+.cssanimations .slide-caption.in .buttons {
+	-webkit-animation: fw-slider-buttons .3s ease-in forwards .3s;
+	animation: fw-slider-buttons .3s ease-in forwards .3s;
+}
+
+@-webkit-keyframes fw-slider-buttons {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fw-slider-buttons {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.slide-caption .button {
+	font-size: 1.2em;
+	line-height: 1em;
+	padding: 1em 1.4em;
+}
+
+/* Post slider */
+.post-slider {
+	margin-bottom: 2em;
+}
+
+.flexslider .flex-control-paging {
+	bottom: 20px;
+}
+
+.post-slider .flex-direction-nav a {
+	height: 40px;
+	margin-top: -20px;
+	width: 40px;
+}
+
+.post-slider .flex-direction-nav a:after {
+	line-height: 40px;
+}
+
+.post-slider .slide-caption {
+	background-color: rgba(0, 0, 0, .7);
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 56%;
+	top: 0;
+	z-index: 20;
+}
+
+.post-slider .caption-inner {
+	padding: 30px 40px;
+}
+
+.post-slider .slide-title,
+.post-slider .slide-description {
+	color: #fff;
+}
+
+.post-slider .slide-title {
+	font-size: 1.4em;
+}
+
+@media all and (min-width: 1260px) {
+	.fw-slider .slide-caption {
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 979px) {
+	.fw-slider .slide-caption {
+		font-size: 9px;
+	}
+
+	.post-slider .slide-caption {
+		font-size: 12px;
+	}
+
+	.post-slider .slide-caption .caption-inner {
+		padding: 20px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.fw-slider .slide-caption {
+		font-size: 6px;
+	}
+
+	.fw-slider .caption-inner {
+		max-width: 46%;
+	}
+
+	.fw-slider .flex-control-paging {
+		display: none;
+	}
+
+	.flex-direction-nav {
+		display: none;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.fw-slider .slide-caption {
+		font-size: 4px;
+	}
+
+	.fw-slider .slide-caption .button {
+		font-size: 8px;
+		padding: .5em .8em;
+	}
+
+	.post-slider .slide-caption {
+		font-size: 11px;
+		line-height: 1.5em;
+	}
+
+	.post-slider .slide-caption .caption-inner {
+		padding: 10px;
+	}
+}

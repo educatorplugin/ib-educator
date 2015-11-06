@@ -1,0 +1,23 @@
+= 1.8.2 =
+
+* Fixed the issue where the custom colors are applied with a slight delay. This issue was caused by the font @import statement in the beginning of the custom colors <style> block. Now, the google fonts are loaded using the link element (<link rel="stylesheet" href="...).
+* Removed the bundled plugins from the theme.
+
+= 1.8.1 =
+
+* Changed the textdomain in the WooCommerce templates to comply with the WordPress standards.
+  The following texts need to be translated in the theme: "Page %d of %d", "Search for:",
+  "Search Products&hellip;", and "Search".
+* Updated readme.
+* Updated screenshot.
+* Added: the Facebook share URL fallbacks to older (sharer) api when the APP ID is empty.
+
+= 1.8.0 =
+
+* A lot of CSS improvements.
+* Tested with the theme unit test.
+* Improved the styles of the core widgets.
+* Removed dependencies from the custom plugins.
+* Added post navigation (the previous and the next post links).
+* Refactored code slightly.
+* Bug fixes.

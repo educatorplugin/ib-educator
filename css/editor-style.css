@@ -1,0 +1,24 @@
+body {
+	color: #555;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.alignleft,
+.wp-caption.alignleft {
+	margin: 0 1em 1em 0;
+}
+
+.alignright,
+.wp-caption.alignright {
+	margin: 0 0 1em 1em;
+}
