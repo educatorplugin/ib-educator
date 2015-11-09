@@ -1,13 +1,20 @@
 <?php
-	get_header();
-	the_post();
-?>
+get_header();
+the_post();
 
+$show_thumbnail = get_post_meta( get_the_ID(), '_educator_show_image', true );
+?>
 <section class="section-content">
 	<div class="container clearfix">
 		<div class="main-content">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php educator_page_title( 'page' ); ?>
+
+				<?php if ( 1 == $show_thumbnail && has_post_thumbnail() ) : ?>
+					<div class="post-thumb">
+						<?php the_post_thumbnail( 'ib-educator-main-column' ); ?>
+					</div>
+				<?php endif; ?>
 
 				<div class="entry-content">
 					<?php
