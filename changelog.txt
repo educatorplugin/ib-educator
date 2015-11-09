@@ -1,3 +1,7 @@
+= 1.8.3 =
+
+* Prepared the theme for the Educator 1.7+.
+
 = 1.8.2 =
 
 * Fixed the issue where the custom colors are applied with a slight delay. This issue was caused by the font @import statement in the beginning of the custom colors <style> block. Now, the google fonts are loaded using the link element (<link rel="stylesheet" href="...).
