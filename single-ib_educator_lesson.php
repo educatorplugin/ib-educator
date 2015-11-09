@@ -4,7 +4,7 @@
 <section class="section-content">
 	<div class="container clearfix">
 		<div class="main-content">
-			<?php IB_Educator_View::template_part( 'content', 'single-lesson' ); ?>
+			<?php Edr_View::template_part( 'content', 'single-lesson' ); ?>
 		</div>
 
 		<div class="page-sidebar">
@@ -14,22 +14,12 @@
 				$lessons = $api->get_lessons( ib_edu_get_course_id( $lesson_id ) );
 
 				if ( $lessons->have_posts() ) {
-					$cl = null;
-
-					if ( class_exists( 'IB_Educator_Completed_Lessons' ) ) {
-						$cl = IB_Educator_Completed_Lessons::get_instance();
-					}
-
 					echo '<aside class="widget"><h1 class="widget-title">' . __( 'Lessons', 'ib-educator' ) . '</h1>';
 					echo '<ul class="lessons-nav">';
 
 					while ( $lessons->have_posts() ) {
 						$lessons->the_post();
 						$classes = null;
-
-						if ( $cl ) {
-							$classes = $cl->add_lesson_class( array(), get_the_ID() );
-						}
 
 						if ( $lesson_id == get_the_ID() ) :
 						?>
