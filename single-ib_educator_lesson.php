@@ -23,15 +23,13 @@
 
 						if ( $lesson_id == get_the_ID() ) :
 						?>
-						<li<?php if ( ! empty( $classes ) ) echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"'; ?>>
-							<span><?php the_title(); if ( ib_edu_has_quiz( get_the_ID() ) ) echo ' (' . __( 'Quiz', 'ib-educator' ) . ')'; ?></span>
-						</li>
-						<?php
-						else :
-						?>
-						<li<?php if ( ! empty( $classes ) ) echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"'; ?>>
-							<a href="<?php the_permalink(); ?>"><?php the_title(); if ( ib_edu_has_quiz( get_the_ID() ) ) echo ' (' . __( 'Quiz', 'ib-educator' ) . ')'; ?></a>
-						</li>
+							<li<?php if ( ! empty( $classes ) ) echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"'; ?>>
+								<span><?php the_title(); if ( ib_edu_has_quiz( get_the_ID() ) ) echo ' (' . __( 'Quiz', 'ib-educator' ) . ')'; ?></span>
+							</li>
+						<?php else : ?>
+							<li<?php if ( ! empty( $classes ) ) echo ' class="' . esc_attr( implode( ' ', $classes ) ) . '"'; ?>>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); if ( ib_edu_has_quiz( get_the_ID() ) ) echo ' (' . __( 'Quiz', 'ib-educator' ) . ')'; ?></a>
+							</li>
 						<?php
 						endif;
 					}

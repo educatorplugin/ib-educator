@@ -2113,7 +2113,7 @@ article.ib-edu-course-single div.course-meta > span {
 }
 
 .single .post-thumb,
-.page .post-thumb {
+.type-page > .post-thumb {
 	margin-bottom: 2em;
 }
 
