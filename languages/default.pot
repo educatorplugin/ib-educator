@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ib-educator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-06 10:01-0500\n"
-"PO-Revision-Date: 2015-11-06 10:01-0500\n"
+"POT-Creation-Date: 2015-11-11 10:31-0500\n"
+"PO-Revision-Date: 2015-11-11 10:31-0500\n"
 "Last-Translator: educatorteam\n"
 "Language-Team: educatorteam <contact@educatorplugin.com>\n"
 "Language: en\n"
@@ -18,13 +18,13 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../archive-ib_educator_course.php:23 ../archive-ib_educator_course.php:45
-#: ../author.php:100 ../taxonomy-ib_educator_category.php:23
-#: ../taxonomy-ib_educator_category.php:45
+#: ../archive-ib_educator_course.php:22 ../archive-ib_educator_course.php:44
+#: ../author.php:100 ../taxonomy-ib_educator_category.php:22
+#: ../taxonomy-ib_educator_category.php:44
 msgid "No courses found."
 msgstr ""
 
-#: ../archive-ib_educator_lesson.php:22 ../archive-ib_educator_lesson.php:43
+#: ../archive-ib_educator_lesson.php:21 ../archive-ib_educator_lesson.php:42
 msgid "No lessons found."
 msgstr ""
 
@@ -49,26 +49,26 @@ msgstr ""
 msgid "No posts found."
 msgstr ""
 
-#: ../comments.php:17
+#: ../comments.php:14
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../comments.php:24 ../comments.php:42
+#: ../comments.php:21 ../comments.php:39
 msgid "Comment navigation"
 msgstr ""
 
-#: ../comments.php:25 ../comments.php:43
+#: ../comments.php:22 ../comments.php:40
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: ../comments.php:26 ../comments.php:44
+#: ../comments.php:23 ../comments.php:41
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: ../comments.php:49
+#: ../comments.php:47
 msgid "Comments are closed."
 msgstr ""
 
@@ -82,26 +82,26 @@ msgstr ""
 msgid "Continue reading %s"
 msgstr ""
 
-#: ../content-none.php:6
+#: ../content-none.php:5
 #, php-format
 msgid "Ready to publish your first post? %s."
 msgstr ""
 
-#: ../content-none.php:7
+#: ../content-none.php:6
 msgid "Get started here"
 msgstr ""
 
-#: ../content-none.php:14 ../content-none.php:24
+#: ../content-none.php:11 ../content-none.php:19
 msgid "Not Found"
 msgstr ""
 
-#: ../content-none.php:17
+#: ../content-none.php:14
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: ../content-none.php:27
+#: ../content-none.php:22
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -112,7 +112,7 @@ msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ""
 
-#: ../content-single.php:23 ../content.php:23 ../page.php:16
+#: ../content-single.php:23 ../content.php:23 ../page.php:23
 #: ../templates/full-width.php:20 ../templates/wide.php:19
 msgid "Pages:"
 msgstr ""
@@ -211,11 +211,11 @@ msgstr ""
 msgid "Search..."
 msgstr ""
 
-#: ../single-ib_educator_lesson.php:23
+#: ../single-ib_educator_lesson.php:17
 msgid "Lessons"
 msgstr ""
 
-#: ../single-ib_educator_lesson.php:37 ../single-ib_educator_lesson.php:43
+#: ../single-ib_educator_lesson.php:27 ../single-ib_educator_lesson.php:31
 #: ../ibeducator/content-lesson.php:13 ../ibeducator/content-lesson.php:32
 msgid "Quiz"
 msgstr ""
