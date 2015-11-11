@@ -39,7 +39,7 @@ if ( $query->have_posts() ) :
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			set_query_var( 'ibeducator_post_count', $i++ );
-			IB_Educator_View::template_part( 'content', 'membership' );
+			Edr_View::template_part( 'content', 'membership' );
 		}
 	?>
 	</div>

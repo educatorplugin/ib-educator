@@ -3,7 +3,7 @@
 /**
  * Theme version.
  */
-define( 'IB_THEME_VERSION', '1.8.2' );
+define( 'IB_THEME_VERSION', '1.8.3' );
 
 // Educator WP plugin customization.
 if ( class_exists( 'IB_Educator_Main' ) ) {
@@ -212,7 +212,7 @@ function educator_author_page_posts( $query ) {
 			$membership_id = get_query_var( 'membership_id' );
 
 			if ( $membership_id ) {
-				$ms = IB_Educator_Memberships::get_instance();
+				$ms = Edr_Memberships::get_instance();
 				$meta = $ms->get_membership_meta( $membership_id );
 
 				if ( ! empty( $meta['categories'] ) ) {

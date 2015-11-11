@@ -13,9 +13,9 @@
 			$courses->the_post();
 
 			if ( $columns > 1 ) {
-				IB_Educator_View::template_part( 'content', 'course' );
+				Edr_View::template_part( 'content', 'course' );
 			} else {
-				IB_Educator_View::template_part( 'content', 'course-fw' );
+				Edr_View::template_part( 'content', 'course-fw' );
 			}
 		}
 	?>

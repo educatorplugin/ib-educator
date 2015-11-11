@@ -11,9 +11,7 @@
 				$page = 'search';
 			}
 		?>
-
 		<?php if ( 'grid_sidebar' == $layout ) : ?>
-
 			<div class="main-content">
 				<?php
 					if ( have_posts() ) :
@@ -36,9 +34,7 @@
 			</div>
 
 			<?php get_sidebar(); ?>
-
 		<?php elseif ( 'grid_no_sidebar' == $layout ) : ?>
-
 			<div class="posts-grid posts-grid-3 clearfix">
 				<?php
 					if ( have_posts() ) :
@@ -54,9 +50,7 @@
 			</div>
 
 			<?php educator_paging_nav(); ?>
-
 		<?php else : ?>
-
 			<div class="main-content posts-list">
 				<?php
 					if ( have_posts() ) :
@@ -74,7 +68,6 @@
 			</div>
 
 			<?php get_sidebar(); ?>
-
 		<?php endif; ?>
 	</div>
 </section>
