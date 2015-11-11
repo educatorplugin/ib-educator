@@ -41,10 +41,11 @@ if ( post_password_required() ) {
 				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ib-educator' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
+	<?php endif; // have_comments() ?>
 
-		<?php if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php _e( 'Comments are closed.', 'ib-educator' ); ?></p>
-		<?php endif; ?>
+	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'ib-educator' ); ?></p>
 	<?php endif; ?>
+
 	<?php comment_form(); ?>
 </div>

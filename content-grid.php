@@ -1,8 +1,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-grid' ); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
-	<div class="post-thumb">
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'ib-educator-grid' ); ?></a>
-	</div>
+		<div class="post-thumb">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'ib-educator-grid' ); ?></a>
+		</div>
 	<?php endif; ?>
 
 	<div class="post-body">
