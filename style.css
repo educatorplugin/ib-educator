@@ -4,7 +4,7 @@ Author: educatorteam
 Author URI: http://educatorplugin.com/
 Theme URI: http://educatorplugin.com/themes/educator/
 Description: A clean and elegant theme created to make it easy to sell online courses. Supports the Educator and the WooCommerce plugins.
-Version: 1.8.2
+Version: 1.8.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ib-educator
@@ -2112,7 +2112,8 @@ article.ib-edu-course-single div.course-meta > span {
 	text-align: center;
 }
 
-.single .post-thumb {
+.single .post-thumb,
+.type-page > .post-thumb {
 	margin-bottom: 2em;
 }
 

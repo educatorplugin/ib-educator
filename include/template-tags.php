@@ -364,8 +364,8 @@ function educator_courses_filter( $args = array() ) {
 		$output .= '</ul></div>';
 	}
 
-	if ( class_exists( 'IB_Educator_Memberships' ) && apply_filters( 'edutheme_memberships_filter', true ) ) {
-		$memberships = IB_Educator_Memberships::get_instance()->get_memberships();
+	if ( class_exists( 'Edr_Memberships' ) && apply_filters( 'edutheme_memberships_filter', true ) ) {
+		$memberships = Edr_Memberships::get_instance()->get_memberships();
 
 		if ( ! empty( $memberships ) ) {
 			$title = '';

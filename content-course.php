@@ -3,9 +3,9 @@ $course_id = get_the_ID();
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-fw clearfix' ); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
-	<div class="post-thumb">
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'ib-educator-main-column' ); ?></a>
-	</div>
+		<div class="post-thumb">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'ib-educator-main-column' ); ?></a>
+		</div>
 	<?php endif; ?>
 
 	<div class="summary">
