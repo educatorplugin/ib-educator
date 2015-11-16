@@ -127,7 +127,7 @@ if ( empty( $page_ids['student_courses_page'] ) ) {
 									echo ib_edu_student_courses( array() );
 								}
 							?>
-						<?php elseif ( $page_id == $page_ids['profile_page'] ) : ?>
+						<?php elseif ( $page_id == $page_ids['profile_page'] && class_exists( 'IBFW_User_Flow' ) ) : ?>
 							<?php
 								$error_fields = array();
 
