@@ -2,10 +2,9 @@
 /*
 Template Name: Full width
 */
-?>
-<?php
-	get_header();
-	the_post();
+
+get_header();
+the_post();
 ?>
 
 <section class="section-content">

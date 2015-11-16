@@ -2,11 +2,9 @@
 /*
 Template Name: Log In Page
 */
-?>
 
-<?php
-	get_header();
-	the_post();
+get_header();
+the_post();
 ?>
 
 <section class="section-content">
