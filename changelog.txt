@@ -1,6 +1,7 @@
 = 1.8.4 =
 
 * Fixed the custom login form's action issue, that appeared after the WordPress 4.0 update. The form's action is the default WordPress login page (.../wp-login.php).
+* A few other fixes and improvements.
 
 = 1.8.3 =
 
