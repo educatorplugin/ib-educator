@@ -3,7 +3,7 @@
 /**
  * Theme version.
  */
-define( 'IB_THEME_VERSION', '1.8.3' );
+define( 'IB_THEME_VERSION', '1.8.4' );
 
 // Educator WP plugin customization.
 if ( class_exists( 'IB_Educator_Main' ) ) {

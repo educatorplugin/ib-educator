@@ -1,3 +1,7 @@
+= 1.8.4 =
+
+* Fixed the custom login form's action issue, that appeared after the WordPress 4.0 update. The form's action is the default WordPress login page (.../wp-login.php).
+
 = 1.8.3 =
 
 * If you have the Educator plugin installed, please update it to the version 1.7 or greater before installing this update.
