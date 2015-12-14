@@ -2,11 +2,9 @@
 /*
 Template Name: Log In Page
 */
-?>
 
-<?php
-	get_header();
-	the_post();
+get_header();
+the_post();
 ?>
 
 <section class="section-content">
@@ -51,10 +49,12 @@ Template Name: Log In Page
 									}
 								}
 
+								remove_filter( 'login_url', 'educator_login_url_filter', 10, 2 );
 								wp_login_form( array(
 									'id_submit' => 'submit-login-form',
 									'redirect'  => $redirect_to,
 								) );
+								add_filter( 'login_url', 'educator_login_url_filter', 10, 2 );
 							?>
 
 							<p class="lost-password-link">
