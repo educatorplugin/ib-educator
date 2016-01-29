@@ -3,7 +3,7 @@
 /**
  * Theme version.
  */
-define( 'IB_THEME_VERSION', '1.8.4' );
+define( 'IB_THEME_VERSION', '1.8.5' );
 
 // Educator WP plugin customization.
 if ( class_exists( 'IB_Educator_Main' ) ) {
@@ -126,7 +126,7 @@ function educator_enqueue_scripts() {
 		wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.js', array( 'jquery' ), '1.3.3', true );
 	}
 	
-	wp_enqueue_style( 'educator-style', get_template_directory_uri() . '/style.css', array(), '1.7.0' );
+	wp_enqueue_style( 'educator-style', get_template_directory_uri() . '/style.css', array(), '1.8.5' );
 
 	// Scripts.
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '2.8.3' );
