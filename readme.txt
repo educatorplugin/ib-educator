@@ -14,15 +14,6 @@ The theme's documentation is published on the educatorplugin.com website:
 
 The theme includes a few custom plugins (stored in light weight ".zip" packages), but it doesn't depend on these plugins, and it doesn't activate them automatically. These plugins are stored in the "include/plugins" directory. The TGM Plugin Activation Class will prompt you to install them, when you activate the theme, but it's not mandatory.
 
-== Credits ==
-
-- Font Awesome from Dave Gandy (http://fortawesome.github.io/Font-Awesome/)
-- FlexSlider (http://www.woothemes.com/flexslider/)
-- Magnific Popup from Dmitry Semenov (http://dimsemenov.com/plugins/magnific-popup/)
-- OwlCarousel from Bartosz Wojciechowski (http://www.owlgraphic.com/owlcarousel/)
-- jQuery Form Validation Plugin from Jörn Zaefferer (http://jqueryvalidation.org/)
-- Modernizr (http://modernizr.com/)
-
 == License ==
 
 ib-educator WordPress Theme, Copyright 2015 http://educatorplugin.com/
@@ -41,3 +32,45 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+== Credits ==
+
+- Font Awesome (https://fortawesome.github.io/Font-Awesome/)
+Font License: SIL OFL 1.1 (http://scripts.sil.org/OFL)
+Code License: MIT License (http://opensource.org/licenses/mit-license.html)
+License Info: https://fortawesome.github.io/Font-Awesome/license/
+
+- FlexSlider (https://www.woothemes.com/flexslider/)
+Copyright 2012 WooThemes
+License: GPLv2 and later
+
+- Magnific Popup (http://dimsemenov.com/plugins/magnific-popup/)
+Copyright (c) 2013 Dmitry Semenov
+License: MIT License (http://dimsemenov.com/plugins/magnific-popup/#license)
+
+- OwlCarousel (http://owlgraphic.com/owlcarousel/)
+Author: Bartosz Wojciechowski
+License: MIT License
+
+- OwlCarousel 2 (http://www.owlcarousel.owlgraphic.com/)
+Author: Bartosz Wojciechowski
+License: MIT License
+
+- jQuery Validation Plugin (http://jqueryvalidation.org/)
+Copyright (c) 2014 Jörn Zaefferer
+License: MIT License
+
+- Modernizr (https://modernizr.com/)
+Copyright (c) Faruk Ates, Paul Irish, Alex Sexton
+Available under the BSD and MIT licenses (https://modernizr.com/license/)
+
+- TGM Plugin Activation Class (http://tgmpluginactivation.com/)
+Copyright 2011 Thomas Griffin (thomasgriffinmedia.com)
+License: GPL-2.0+
+
+- Google Fonts (https://www.google.com/fonts)
+PT Sans by Paratype (License - SIL Open Font License, 1.1)
+Open Sans by Steve Matteson (License - Apache License, version 2.0)
+Roboto by Christian Robertson (License - Apache License, version 2.0)
+Noto Sans by Google (License - Apache License, version 2.0)
+Oxygen by Vernon Adams (License - SIL Open Font License, 1.1)
