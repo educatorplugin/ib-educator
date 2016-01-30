@@ -1,3 +1,6 @@
+= 1.8.6 =
+* Updated readme.txt
+
 = 1.8.5 =
 * Added the full and uncompressed Modernizr 2.8.3 file
 * Using the wp_add_inline_style function to output customizer-configured styles.
