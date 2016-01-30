@@ -42,7 +42,7 @@ License Info: https://fortawesome.github.io/Font-Awesome/license/
 
 - FlexSlider (https://www.woothemes.com/flexslider/)
 Copyright 2012 WooThemes
-License: GPLv2 and later
+License: GPLv2 and later (https://github.com/woothemes/FlexSlider/blob/ce5441b214a46322424a32c92d77baaadeed9688/README.mdown)
 
 - Magnific Popup (http://dimsemenov.com/plugins/magnific-popup/)
 Copyright (c) 2013 Dmitry Semenov
@@ -66,11 +66,11 @@ Available under the BSD and MIT licenses (https://modernizr.com/license/)
 
 - TGM Plugin Activation Class (http://tgmpluginactivation.com/)
 Copyright 2011 Thomas Griffin (thomasgriffinmedia.com)
-License: GPL-2.0+
+License: GPL-2.0+ (http://tgmpluginactivation.com/#h-license)
 
 - Google Fonts (https://www.google.com/fonts)
-PT Sans by Paratype (License - SIL Open Font License, 1.1)
-Open Sans by Steve Matteson (License - Apache License, version 2.0)
-Roboto by Christian Robertson (License - Apache License, version 2.0)
-Noto Sans by Google (License - Apache License, version 2.0)
-Oxygen by Vernon Adams (License - SIL Open Font License, 1.1)
+PT Sans by Paratype (https://www.google.com/fonts/specimen/PT+Sans) (License - SIL Open Font License, 1.1)
+Open Sans by Steve Matteson (https://www.google.com/fonts/specimen/Open+Sans) (License - Apache License, version 2.0)
+Roboto by Christian Robertson (https://www.google.com/fonts/specimen/Roboto) (License - Apache License, version 2.0)
+Noto Sans by Google (https://www.google.com/fonts/specimen/Noto+Sans) (License - Apache License, version 2.0)
+Oxygen by Vernon Adams (https://www.google.com/fonts/specimen/Oxygen) (License - SIL Open Font License, 1.1)
